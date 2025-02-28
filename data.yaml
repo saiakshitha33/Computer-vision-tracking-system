@@ -1,0 +1,6 @@
+train: /content/drive/MyDrive/yolov8_tracking/yolov8_detection/Chicken test,train validate data/demo/train
+val:   /content/drive/MyDrive/yolov8_tracking/yolov8_detection/Chicken test,train validate data/demo/validate
+test:  /content/drive/MyDrive/yolov8_tracking/yolov8_detection/Chicken test,train validate data/demo/test
+
+nc: 1
+names: ['chicken']
