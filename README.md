@@ -1,48 +1,16 @@
-# Project :
-
-Hi,
-
-check out 
-- `result_final.mp4`. 
-- `result_bytetrack.avi`
-- `result_strongsort.avi`
+#Project
 
 
-## Problem statement :
+This research project focuses on improving the tracking of individual broiler chickens in a group setting using multi-object tracking computer vision algorithms. Despite advancements, existing algorithms struggle with identity switches and reduced tracking efficiency due to challenges such as similar bird appearances and environmental changes. This study introduces a refined tracking system that incorporates the YOLOv11x model enhanced with a custom feature extractor and a kinematics-aware machine learning classifier. Our system significantly improves tracking accuracy, precision, and processing speeds by optimizing model parameters and integrating advanced machine learning techniques.
 
-Build an AI-based system that can re-identify persons in a video sequence/or live webcam that have been temporarily lost due to occlusion or change in appearance. The system should be able to track the persons even when they are partially or completely occluded, and re-identify them when they reappear. The person should keep the same ID even if they leave the frame and come back again. Count the total number of  persons seen in the image.
+Key Findings:
 
-----
-
-This submission is very quick and without deep diving into anything. Tracking the objects is no major challenge with the open source content we have. As you mentioned the detector, or tracker is not the important thing of the challenge but  when "person leave the frame and come back again" and gets assigned to the same ID is. I wanted to work on that specific problem statement. 
+Performance: The YOLOv11x model, with custom modifications and pruning, achieved high precision and recall across various developmental stages of broilers.
+Efficiency: Model pruning increased processing speeds without compromising detection performance, handling real-time tracking requirements effectively.
+Re-identification Improvements: Enhanced feature extraction techniques resulted in better re-identification of individual birds, crucial for long-duration tracking.
+Kinematic Features: Integration of kinematic features with a machine learning classifier minimized identity switches, enhancing the overall consistency of the tracking system.
+Conclusion: The developed system not only advances the technology in precision poultry farming but also sets a foundation for more robust and efficient animal tracking solutions in diverse farming environments.
 
 
 
 
-- Some months ago, i worked on similar problem statement but i had to deal with using simplee low computing algorithms. There i detected a person and saved its photo in some database. and When that person left the frame and new person got detected. I basically took the euclidean distance of the detected person and the existing person. If it's above some calibrated threshold. It'll get assigned as a new ID and so.
-
-### Run Your Own :
-
-If you open the file, you'll see 
-```
-TRACKER  =  "bytetrack"
-```
-switch to `strongsort`. 
-
-i should correct myself. bytetracker didn't need reid weights. strongsort did. i've included that as well in the code.
-
-```
-python yolov8_util.py
-```
-
-as you said, applying trackers on the top of your code. I tried both bytetracker and strongsort as you can see them in *.avi files stored in the same directory.
-
-It was holi festival here in india. Sorry for the delay.
-
-Happy Holi! :)
-
-
-
-### References :
-
-https://github.com/mikel-brostrom/yolov8_tracking
