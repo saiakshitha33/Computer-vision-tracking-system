@@ -6,9 +6,13 @@
 **Key Findings**
 
 ##Performance: The YOLOv11x model, with custom modifications and pruning, achieved high precision and recall across various developmental stages of broilers.
+
 ##Efficiency: Model pruning increased processing speeds without compromising detection performance, handling real-time tracking requirements effectively.
+
 ##Re-identification Improvements: Enhanced feature extraction techniques resulted in better re-identification of individual birds, crucial for long-duration tracking.
+
 ##Kinematic Features: Integration of kinematic features with a machine learning classifier minimized identity switches, enhancing the overall consistency of the tracking system.
+
 ##Conclusion: The developed system not only advances the technology in precision poultry farming but also sets a foundation for more robust and efficient animal tracking solutions in diverse farming environments.
 
 
