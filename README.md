@@ -1,32 +1,47 @@
-🔬 Research Assistant | University of Georgia
-Project: Enhancing Multi-Object Tracking of Broiler Chickens Using Deep Learning & ML, Computer Vision
+🔬 Research Contribution: Multi-Object Tracking for Precision Poultry Farming
+Role: Research Assistant
+Institution: University of Georgia
+Project: Enhancing Multi-Object Tracking of Broiler Chickens Using Deep Learning, ML & Computer Vision
 
 As part of an interdisciplinary research team, I developed a robust AI pipeline for real-time, identity-preserving tracking of broiler chickens in dense commercial environments. The work spanned object detection, re-identification, behavior modeling, and tracking performance optimization.
 
-🚀 Key Technical Contributions:
-🔍 1. Object Detection & Optimization:
+🚀 Key Technical Contributions
+1. Object Detection & Optimization
+Trained and evaluated 10 YOLO variants.
 
-Trained and tested 10 YOLO variants; selected YOLOv11x for its superior metrics:
+Selected YOLOv11x for deployment based on high performance:
 
-Precision: 0.968, Recall: 0.960, mAP@50: 0.986, mAP@50–95: 0.805
+Precision: 0.968
 
-Pruned the YOLOv11x model with L1 unstructured pruning to reduce latency:
+Recall: 0.960
 
-Achieved 60 FPS vs. original 46.5 FPS at a pruning ratio of 0.09.
+mAP@50: 0.986
 
-📦 2. Feature Extraction & Re-Identification:
+mAP@50–95: 0.805
 
-Designed a hybrid feature extractor using ViT, ResNet152, and DenseNet201.
+Applied L1 unstructured pruning to reduce latency and model size:
 
-Obtained highly discriminative embeddings with:
+Inference Speed: Improved from 46.5 FPS → 60 FPS at a 0.09 pruning ratio
 
-Cosine Similarity: 0.956±0.032, Euclidean Distance: 0.020±0.007
+2. Deep Feature Extraction & Re-Identification
+Designed a hybrid deep feature extractor using:
 
-🧠 3. ML-Based Kinematics-Aware Classifier:
+Vision Transformer (ViT)
 
-Built and benchmarked 15 machine learning models for re-ID classification from velocity, acceleration, and displacement features.
+ResNet152
 
-Evaluated Models:
+DenseNet201
+
+Achieved highly discriminative embedding performance:
+
+Cosine Similarity: 0.956 ± 0.032
+
+Euclidean Distance: 0.020 ± 0.007
+
+3. Kinematics-Aware ML Classifier for Identity Matching
+Engineered a kinematics-aware classifier based on velocity, acceleration, and displacement features.
+
+Benchmarked 15 machine learning models:
 
 Logistic Regression
 
@@ -38,7 +53,7 @@ Gradient Boosting Classifier
 
 XGBoost
 
-K-Nearest Neighbors
+K-Nearest Neighbors (KNN)
 
 Support Vector Machine (SVM)
 
@@ -46,7 +61,7 @@ Linear Discriminant Analysis (LDA)
 
 Quadratic Discriminant Analysis (QDA)
 
-Decision Tree Classifier
+Decision Tree
 
 Naive Bayes
 
@@ -58,23 +73,51 @@ CatBoost
 
 Multilayer Perceptron (MLP)
 
-Best performer: Extra Trees Classifier
-Accuracy: 0.917, Precision: 0.958, Recall: 0.920, F1 Score: 0.939
+Top Performer: Extra Trees Classifier
 
-🎯 4. Multi-Object Tracking System:
+Accuracy: 0.917
 
-Compared and tuned 6 tracking algorithms: DeepSORT, StrongSORT, SMILEtrack, OC-SORT, ByteTrack, and Modified ByteTrack.
+Precision: 0.958
 
-Final system delivered:
+Recall: 0.920
 
-MOTA: 0.904±0.073, MOTP: 0.953±0.057
+F1 Score: 0.939
 
-Tracking Speed: 30.1±3.3 FPS, Duration: up to 17.3 mins continuously
+4. Multi-Object Tracking System
+Evaluated and tuned six tracking algorithms:
 
-📊 Impact:
-Accurately tracked over 5,700 broilers across multiple camera setups, lighting conditions, and occlusion-heavy environments.
+DeepSORT, StrongSORT, SMILEtrack, OC-SORT, ByteTrack, and Modified ByteTrack
 
-Enabled long-term identity preservation for behavior analysis and monitoring in precision livestock farming.
+Final pipeline performance:
 
-This research combined computer vision, ML, and deep learning into a scalable pipeline for the poultry industry—contributing to smarter animal welfare, precision agriculture, and real-time behavioral diagnostics.
+MOTA: 0.904 ± 0.073
+
+MOTP: 0.953 ± 0.057
+
+Tracking Speed: 30.1 ± 3.3 FPS
+
+Longest Continuous Tracking Duration: 17.3 mins
+
+📊 Impact & Deployment
+Successfully tracked 5,700+ broilers across challenging real-world conditions:
+
+Varied lighting and occlusion
+
+High-density environments
+
+Region-specific zones (feeder, drinker, open)
+
+Enabled long-term identity preservation for behavior monitoring
+
+Strong potential for:
+
+Precision livestock farming
+
+Automated welfare monitoring
+
+Behavioral diagnostics at scale
+
+This research bridged the gap between computer vision, deep learning, and precision agriculture, resulting in a high-accuracy, scalable tracking system tailored for modern poultry farms.
+
+
 
